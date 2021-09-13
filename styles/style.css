@@ -1,0 +1,30 @@
+body{
+  background-image: url(/images/AwtzPJZFYffvvQEnFEmB.jpg);
+  background-repeat: no-repeat;
+  background-size: 1550px 800px;
+}
+
+
+.form {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  margin-top: 250px;
+  transform: translateX(5px);
+}
+
+.form__label{
+  color: white;
+  background-color: black;
+  padding: 0 10px;
+}
+
+.select {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.results__question{
+  border: none;
+}

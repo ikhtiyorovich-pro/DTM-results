@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./images/gerb.png" />
+    <title>DTM test javoblari</title>
+  </head>
+  <body>
+    <div class="container-fluid all-wrapper">
+      <form
+        class="form results-form"
+        method="POST"
+        action="https//echo.htmlacademy.ru"
+      >
+        <label class="form__label" for="results-id"
+          >Iltimos balingizni kiriting!</label
+        >
+        <input
+          placeholder="To'plagan balingiz"
+          type="text"
+          name="results-input"
+          id="results-id"
+        />
+
+        <select
+          class="d-block select"
+          name="university__select"
+          id="university__select-id"
+          required
+        >
+          <option
+            class="results__question"
+            value="university__select"
+            selected
+            disabled
+            hidden
+          >
+            Qaysi oliy o'quv yurtiga topshirgansiz?
+          </option>
+          <option class="UMU" value="university__select">
+            O’zbekiston milliy universiteti
+          </option>
+          <option class="TDTU" value="university__select">
+            Toshkent davlat texnika universiteti
+          </option>
+          <option class="TDIU" value="university__select">
+            Toshkent davlat iqtisodiyot universiteti
+          </option>
+          <option class="UDJTU" value="university__select">
+            O’zbekiston davlat jahon tillari universiteti
+          </option>
+          <option class="TDSHI" value="university__select">
+            Toshkent davlat sharqshunoslik instituti
+          </option>
+          <option class="TAQI" value="university__select">
+            Toshkent arxitektura-qurilish instituti
+          </option>
+          <option class="TTVESI" value="university__select">
+            Toshkent to’qimachilik va engil sanoat istituti
+          </option>
+          <option class="TAYI" value="university__select">
+            Toshkent avtomobil-yo’llari instituti
+          </option>
+        </select>
+
+        <span class="results__span"></span>
+      </form>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
