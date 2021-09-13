@@ -10,66 +10,83 @@
     <title>DTM test javoblari</title>
   </head>
   <body>
+    <div class="logo__name-wrapper">
+      <img src="https://img.icons8.com/ios-filled/50/000000/university.png" />
+      <h1>University of Westminster</h1>
+    </div>
     <div class="container-fluid all-wrapper">
       <form
         class="form results-form"
         method="POST"
-        action="https//echo.htmlacademy.ru"
+        action="https://echo.htmlacademy.ru"
       >
-        <label class="form__label" for="results-id"
-          >Iltimos balingizni kiriting!</label
-        >
-        <input
-          placeholder="To'plagan balingiz"
-          type="text"
-          name="results-input"
-          id="results-id"
-        />
-
-        <select
-          class="d-block select"
-          name="university__select"
-          id="university__select-id"
-          required
-        >
-          <option
-            class="results__question"
-            value="university__select"
-            selected
-            disabled
-            hidden
+        <div>
+          <label class="form__label" for="surname-id"
+            >Iltimos Familiyangizni kiriting!</label
           >
-            Qaysi oliy o'quv yurtiga topshirgansiz?
-          </option>
-          <option class="UMU" value="university__select">
-            O’zbekiston milliy universiteti
-          </option>
-          <option class="TDTU" value="university__select">
-            Toshkent davlat texnika universiteti
-          </option>
-          <option class="TDIU" value="university__select">
-            Toshkent davlat iqtisodiyot universiteti
-          </option>
-          <option class="UDJTU" value="university__select">
-            O’zbekiston davlat jahon tillari universiteti
-          </option>
-          <option class="TDSHI" value="university__select">
-            Toshkent davlat sharqshunoslik instituti
-          </option>
-          <option class="TAQI" value="university__select">
-            Toshkent arxitektura-qurilish instituti
-          </option>
-          <option class="TTVESI" value="university__select">
-            Toshkent to’qimachilik va engil sanoat istituti
-          </option>
-          <option class="TAYI" value="university__select">
-            Toshkent avtomobil-yo’llari instituti
-          </option>
-        </select>
+          <input
+            class="form__input"
+            placeholder="Familiyangiz"
+            type="text"
+            name="Surname"
+            id="surname-id"
+            required
+          />
+        </div>
 
-        <span class="results__span"></span>
+        <div>
+          <label class="form__label" for="name-id"
+            >Iltimos Ismingizni kiriting!</label
+          >
+          <input
+            class="form__input name"
+            placeholder="Ismingiz"
+            type="text"
+            name="Name"
+            id="name-id"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="form__label" for="results-id"
+            >Iltimos balingizni kiriting!</label
+          >
+          <input
+            class="form__input ball-input ball"
+            placeholder="To'plagan balingiz"
+            type="text"
+            name="Results"
+            id="results-id"
+            max="250"
+            min="1"
+            maxlength="3"
+            required
+          />
+        </div>
+
+        <button class="results__button" type="submit">Natija</button>
+
+        <div class="checkbox-wrapper">
+          <label class="checkbox__label" for="grant"
+            >Introduction to university on grant</label
+          >
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="Grant"
+            id="Introduction__id"
+          />
+        </div>
       </form>
+      <p class="natija"></p>
     </div>
+
+    <div class="hidden-box">
+      <div class="username"></div>
+      <div class="result"></div>
+    </div>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
